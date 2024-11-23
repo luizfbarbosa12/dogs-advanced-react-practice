@@ -9,10 +9,10 @@ const Login = () => {
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="criar" element={<LoginCreate />} />
-        <Route path="perdeu" element={<LoginLostPassword />} />
-        <Route path="resetar" element={<LoginResetPassword />} />
+        <Route path='/' element={<LoginForm />} />
+        <Route path='criar' element={<LoginCreate />} />
+        <Route path='perdeu' element={<LoginLostPassword />} />
+        <Route path='resetar' element={<LoginResetPassword />} />
       </Routes>
     </div>
   )
