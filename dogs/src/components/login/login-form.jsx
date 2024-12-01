@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Input from '../Forms/Input'
-import Button from '../Forms/Button'
+import Input from '../forms/input/input';
+import Button from '../forms/button/button';
 import { UserContext } from '../../UserContext'
-import Error from '../Helper/Error'
-import styles from './LoginForm.module.css'
-import stylesBtn from '../Forms/Button.module.css'
-import Head from '../Helper/Head'
+import Error from '../helper/error'
+import styles from './login-form.module.css'
+// import stylesBtn from '../forms/button.module.css'
+import Head from '../helper/head'
 import useForm from '../../hooks/useForm'
 import { TOKEN_POST } from '../../api'
 
@@ -44,7 +44,7 @@ const LoginForm = () => {
       <div className={styles.cadastro}>
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se no site.</p>
-        <Link className={stylesBtn.button} to='/login/criar'>
+        <Link to='/login/criar'>
           Cadastro
         </Link>
       </div>

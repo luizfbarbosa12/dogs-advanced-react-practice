@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './user-photo-post.module.css';
 import useForm from '../../hooks/useForm'
 import useFetch from '../../hooks/useFetch';
-import Input from '../forms/input';
-import Button from '../Forms/Button';
-import Error from '../Helper/Error';
+import Input from '../forms/input/input';
+import Button from '../forms/button/button';
+import Error from '../helper/error';
 import { PHOTO_POST } from '../../api';
 import { useNavigate } from 'react-router-dom';
-import Head from '../Helper/Head';
+import Head from '../helper/head';
 
 const UserPhotoPost = () => {
   const nome = useForm();

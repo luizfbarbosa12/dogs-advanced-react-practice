@@ -1,10 +1,10 @@
 import React from 'react';
-import Input from '../Forms/Input';
-import Button from '../Forms/Button';
-import Error from '../Helper/Error';
+import Input from '../forms/input/input';
+import Button from '../forms/button/button';
+import Error from '../helper/error';
 import { UserContext } from '../../UserContext';
-import useFetch from '../../Hooks/useFetch';
-import Head from '../Helper/Head';
+import useFetch from '../../hooks/useFetch';
+import Head from '../helper/head';
 import useForm from '../../hooks/useForm';
 import { USER_POST } from '../../api';
 

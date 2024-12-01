@@ -3,14 +3,14 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Footer from './Components/Footer';
 import Header from './components/header/header'
-// import Home from './Components/Home';
+import Home from './components/home/home';
 import Login from './components/login/login';
 import { UserStorage } from './UserContext';
 import User from './components/user/user';
 import ProtectedRoute from './components/helper/protected-route';
 import Photo from './Components/Photo/Photo';
-// import UserProfile from './Components/User/UserProfile';
-// import NotFound from './Components/NotFound';
+// import UserProfile from './components/user/';
+import NotFound from './not-found';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
               />
               <Route path="foto/:id" element={<Photo />} />
               {/* <Route path="perfil/:user" element={<UserProfile />} /> */}
-              {/* <Route path="*" element={<NotFound />} /> */}
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           {/* <Footer /> */}
